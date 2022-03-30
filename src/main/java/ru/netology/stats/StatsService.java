@@ -4,7 +4,7 @@ public class StatsService {
 
     public int calcSum(int[] sales) {
         int sum = 0;
-        for(int sale : sales) {
+        for (int sale : sales) {
             sum += sale;
         }
         return sum;
@@ -30,7 +30,7 @@ public class StatsService {
     public int calcMinMonth(int[] sales) {
         int minMonth = 0;
         for (int i = 1; i < sales.length; i++) {
-            if (sales[minMonth] <= sales[i]) {
+            if (sales[minMonth] >= sales[i]) {
                 minMonth = i;
             }
         }
